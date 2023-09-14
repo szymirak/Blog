@@ -12,7 +12,7 @@
       margin: 0;
       padding: 0;
       animation: fadeIn 2s ease-in;
-      background: linear-gradient(135deg, #2980b9, #6dd5fa)
+      background: linear-gradient(135deg, #2980b9, #6dd5fa);
     }
     header {
       background-color: #333;
@@ -58,6 +58,39 @@
     a:hover {
       text-decoration: underline;
     }
+    /* Styl menu nawigacyjnego */
+    nav {
+      background-color: #333;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .navigation-menu {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navigation-menu li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    .navigation-menu li:last-child {
+      margin-right: 0;
+    }
+
+    .navigation-menu a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .navigation-menu a:hover {
+      text-decoration: underline;
+    }
+
     @keyframes fadeIn {
       from {
         opacity: 0;
@@ -96,29 +129,37 @@
 </head>
 <body>
   <header>
+    <nav>
+      <ul class="navigation-menu">
+        <li><a href="#about">O mnie</a></li>
+        <li><a href="#projects">Projekty</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
     <h1>Blog z życia Szymka</h1>
   </header>
   <div class="container">
-    <section class="section">
+    <section id="about" class="section">
       <h2>O mnie</h2>
       <p>Jestem 22-letnim studentem, w trakcie nauki do obrony pracy licencjackiej. W moim blogu dzielę się swoimi doświadczeniami i przemyśleniami na ten temat.</p>
       <div class="about-me-image">
         <img class="featured-image" src="szymon.jpg" alt="Zdjęcie Szymka" width="300" height="300">
       </div>
     </section>
-    <section class="section">
+    <section id="projects" class="section">
       <h2>Projekty</h2>
       <ul>
         <li>Obrona pracy licencjackiej (ukończone)</li>
       </ul>
     </section>
-    <section class="section">
-  <h2>Wpisy</h2>
-  <div class="twitter-tweet">
-<a class="twitter-timeline" data-lang="pl" data-theme="dark" href="https://twitter.com/szymix27?ref_src=twsrc%5Etfw">Tweets by szymix27</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </div>
-</section>
-<section class="section">
+    <section id="blog" class="section">
+      <h2>Wpisy</h2>
+      <div class="twitter-tweet">
+        <a class="twitter-timeline" data-lang="pl" data-theme="dark" href="https://twitter.com/szymix27?ref_src=twsrc%5Etfw">Tweets by szymix27</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </section>
+<section id="contact" class="section">
   <h2>Kontakt</h2>
   <div class="contact-info">
     <p>
